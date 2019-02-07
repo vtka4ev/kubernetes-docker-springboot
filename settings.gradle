@@ -1,1 +1,3 @@
 rootProject.name = 'kubernetes-docker-springboot'
+
+include 'main-app'
