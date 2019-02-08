@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: spring-boot-test-service
+  labels:
+    app: spring-boot-test
+spec:
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 8080
+    nodePort: 30555
+  selector:
+    app: spring-boot-test
